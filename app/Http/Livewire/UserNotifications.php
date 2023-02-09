@@ -19,9 +19,10 @@ class UserNotifications extends Component
 
     public function sendNotifications()
     {
-        User::all()->map(function($user) {
+        $users = User::all();
+        foreach($users as $user){
             SendUserNotification::dispatch($user);
-        });
+        }
 
         $this->status = 'Notifications Sent';
     }
