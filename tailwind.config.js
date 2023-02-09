@@ -7,6 +7,14 @@ module.exports = {
                 sans: ['Inter var', ...defaultTheme.fontFamily.sans],
             },
         },
+        colors: {
+            white: '#fff',
+            green: '#5BB65F',
+            teal: '#55C5E5',
+            yellow: '#FFAC27',
+            purple: '#6459B0',
+            orange: '#E86848'
+        }
     },
     variants: {
         extend: {
